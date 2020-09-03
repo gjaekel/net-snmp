@@ -28,7 +28,7 @@ ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 SOFTWARE.
 ******************************************************************/
 /*
- * Copyright © 2003 Sun Microsystems, Inc. All rights reserved.
+ * Copyright Â© 2003 Sun Microsystems, Inc. All rights reserved.
  * Use is subject to license terms specified in the COPYING file
  * distributed with the Net-SNMP package.
  */
@@ -1861,7 +1861,7 @@ getoid(FILE * fp, struct subid_s *id,   /* an array of subids */
        int length)
 {                               /* the length of the array */
     register int    count;
-    int             type;
+    int             type;MA
     char            token[MAXTOKEN];
 
     if ((type = get_token(fp, token, MAXTOKEN)) != LEFTBRACKET) {
@@ -3620,7 +3620,7 @@ parse_imports(FILE * fp)
     register int    type;
     char            token[MAXTOKEN];
     char            modbuf[256];
-#define MAX_IMPORTS	256
+#define MAX_IMPORTS	512
     struct module_import import_list[MAX_IMPORTS];
     int             this_module;
     struct module  *mp;
